@@ -1,0 +1,127 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zebras bet</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css">
+    <script src="menu.js" defer></script>
+</head>
+<body>
+
+<!-- HOME -->
+<div class="container-home">
+  <header class="cabecalho">
+      <img class='img-logo' src="../images/logo000.png" alt="logo" width="50px" />
+
+      <div class="menu-lateral-direito">
+          <div class='button-open' id="btn-open">
+              <i class="bi bi-list"></i>
+          </div>
+
+          <div class="menu-lateral" id="menu-lateral">
+              <ul>
+                  <li><a href="#">Login  </a></li>
+                  <li><a href="#">Regras </a></li>
+                  <li><a href="#">Sobre  </a></li>
+              </ul>
+              <div class='button-close' id="btn-close"><i class="bi bi-x-lg"></i></div>
+          </div>
+          <div class="overlay" id="overlay"></div>
+      </div>
+  </header>
+
+  <div class="main-content-home">
+      <!-- Conteúdo original -->
+      <div id="conteudo-original">
+        <div class="title-home">Zebras de hoje - 03/07/2024 </div>
+          <div class="cards">
+              <section >
+                  <div class="card">
+                      <div class="triangulo-esquerdo"></div>
+                      <div class="f">1°</div>
+                      <span class="data" style="font-size: 12px;"> 18:00 / 20/07</span>
+                      <main class="content">
+                          <div class="top-box">
+                              <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj-ddZYijCTkaK6pcPVZa5DQAGBK19a0kBEitqTZxBZjsNfBI4Rmxb9w35krS7-vtMkn92ZJEQkMnwcFQR9M8DbMHL1k4PKFebnjBSuVyR99rbJISI0gKR4ds1oCCI_zTj4u6S6wPAWKPo3/s320/NATICO.png" alt="Palmeiras" />
+                              <span>Palmeiras</span>
+                          </div>
+                          <div class="x-center">X</div>
+                          <div class="bottom-box">
+                              <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjfpdaSKwF6AOTKYwIXRZ126LkVwKfT_EnAok6TUs_1zejKrJYc5wvcvrYZO6r-OeCHeagIZYPqB5Si35_MnCbZHiRxFi5Kqk_kadf_aM6f4SpirXOvfGVu10LD6ysRMt5guKvHQZV891HQ/s320/palmeiras-logo-3.png" alt="Náltico" />
+                              <span>Náltico</span>
+                          </div>
+                      </main>
+                      <div class="triangulo-direito"> </div>
+                      <div class="z">14°</div>
+                  </div>
+                  <button class="add-button" type="button"> VAI DAR ZEBRA </button>
+              </section>
+          </div>
+      </div>
+
+      <!-- conteudo alternativo bilhete -->
+      <div id="conteudo-bilhete" style="display: none;">
+        <div class="conteudo-bilhete">
+            <div class="title-home">Jogos selecionados</div>
+
+            <div class="bilhete" style="font-size: small;">
+              <strong class="text-red">2 selecionados (mínimo 20)</strong>
+              <div class="container-bilhete" >
+                  <div class="item-bilhete">
+                      <div>
+                          <div>Palmeiras X Náutico</div>
+                          <span>16:00 02/07</span> <br />
+                          <span>Brasil - Série A</span>
+                      </div>
+                      <span class="remover" style="color: red; font-size: medium;">✖</span>
+                  </div>
+                  <div class="item-bilhete">
+                      <div>
+                          <div class="info">São Paulo X Corinthians</div>
+                          <span>18:00 03/07</span> <br />
+                          <span>Brasil - Série A</span>
+                      </div>
+                      <span class="remover" style="color: red; font-size: medium;">✖</span>
+                  </div>
+                  <div class="item-bilhete">
+                      <div>
+                          <div class="info">Fluminense X Bahia</div>
+                          <span>16:00 10/07</span> <br />
+                          <span>Brasil - Série A</span>
+                      </div>
+                      <span class="remover" style="color: red; font-size: medium;">✖</span>
+                  </div>
+              </div>
+
+              <div class="bilhete-value">
+                  <div class="inputs-info">
+                      <label for="name">Cliente:</label>
+                      <input type="text" placeholder="opcional" id="name">
+                  </div>
+                  <div class="inputs-info">
+                      <label for="value">Valor:</label>
+                      <input type="text" placeholder="R$ 0,00" id="value" >
+                  </div>
+              </div>
+              <!-- <p><b>Retornos: </b><span>R$ 0,00</span></p> -->
+              <button>FINALIZAR ZEBRA</button>
+          </div>
+          </div>
+      </div>
+  </div>
+
+  <div class="barra-inferior" id="barra-inferior">
+      <div class="count">
+          Escolha no mínimo <br />20 zebras
+      </div>
+      <div style="display: flex;">
+          <i class="bi bi-ticket-detailed-fill"></i>
+          <div class="qtd">0</div>
+      </div>
+  </div>
+</div>
+</body>
+</html>
