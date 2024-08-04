@@ -1,30 +1,40 @@
-
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zebras bet</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/card.css">
+    <link rel="stylesheet" href="styles/infor.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css">
-    <script src="menu.js" defer></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="scripts.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </head>
 <body>
 
 <!-- HOME -->
 <div class="container-home">
   <header class="cabecalho">
-      <img class='img-logo' src="../images/logo000.png" alt="logo" width="50px" />
+      <img class='img-logo' src="../images/logo.png" alt="logo" width="90px" />
 
       <div class="menu-lateral-direito">
+            <a href="../page-login/login.html">Entrar</a>
+
+            <a href="../page-SignUp/signUp.html"><button class="btn-cadastro"> Cadastre-se</button></a>
           <div class='button-open' id="btn-open">
               <i class="bi bi-list"></i>
           </div>
 
           <div class="menu-lateral" id="menu-lateral">
               <ul>
-                  <li><a href="#">Login  </a></li>
-                  <li><a href="#">Regras </a></li>
+                  <li><a href="../page-login/login.html">Login  </a></li>
+                  <li><a href="../Page-Regras/regras.html">Regras </a></li>
                   <li><a href="#">Sobre  </a></li>
               </ul>
               <div class='button-close' id="btn-close"><i class="bi bi-x-lg"></i></div>
@@ -33,13 +43,42 @@
       </div>
   </header>
 
-  <div class="main-content-home">
+  <div class="app">
       <!-- Conteúdo original -->
       <div id="conteudo-original">
+        <!-- SLIDER CARROSSEL -->
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active" ></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="d-block w-100 h-50" src="../images/1.png" alt="First slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="../images/2.png" alt="Second slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="../images/3.png" alt="Third slide">
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+        <!-- FIM SLIDER CARROSSEL -->
+
         <div class="title-home">Zebras de hoje - 03/07/2024 </div>
           <div class="cards">
               <section >
-                  <div class="card">
+                  <div class="card" style="border: none; border-radius: 10px 10px 0px 0px">
                       <div class="triangulo-esquerdo"></div>
                       <div class="f">1°</div>
                       <span class="data" style="font-size: 12px;"> 18:00 / 20/07</span>
@@ -59,7 +98,219 @@
                   </div>
                   <button class="add-button" type="button"> VAI DAR ZEBRA </button>
               </section>
+              <section >
+                  <div class="card" style="border: none; border-radius: 10px 10px 0px 0px;">
+                        <div class="triangulo-esquerdo"></div>
+                        <div class="f">1°</div>
+                           <span class="data" style="font-size: 12px;"> 18:00 / 20/07</span>
+                      <main class="content">
+                          <div class="top-box">
+                              <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj-ddZYijCTkaK6pcPVZa5DQAGBK19a0kBEitqTZxBZjsNfBI4Rmxb9w35krS7-vtMkn92ZJEQkMnwcFQR9M8DbMHL1k4PKFebnjBSuVyR99rbJISI0gKR4ds1oCCI_zTj4u6S6wPAWKPo3/s320/NATICO.png" alt="Palmeiras" />
+                              <span>Palmeiras</span>
+                          </div>
+                          <div class="x-center">X</div>
+                          <div class="bottom-box">
+                              <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjfpdaSKwF6AOTKYwIXRZ126LkVwKfT_EnAok6TUs_1zejKrJYc5wvcvrYZO6r-OeCHeagIZYPqB5Si35_MnCbZHiRxFi5Kqk_kadf_aM6f4SpirXOvfGVu10LD6ysRMt5guKvHQZV891HQ/s320/palmeiras-logo-3.png" alt="Náltico" />
+                              <span>Náltico</span>
+                          </div>
+                      </main>
+                        <div class="triangulo-direito"> </div>
+                        <div class="z">14°</div>
+                  </div>
+                  <button class="add-button" type="button"> VAI DAR ZEBRA </button>
+              </section>
+              <section >
+                  <div class="card" style="border: none; border-radius: 10px 10px 0px 0px;">
+                      <div class="triangulo-esquerdo"></div>
+                      <div class="f">1°</div>
+                      <span class="data" style="font-size: 12px;"> 18:00 / 20/07</span>
+                      <main class="content">
+                          <div class="top-box">
+                              <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj-ddZYijCTkaK6pcPVZa5DQAGBK19a0kBEitqTZxBZjsNfBI4Rmxb9w35krS7-vtMkn92ZJEQkMnwcFQR9M8DbMHL1k4PKFebnjBSuVyR99rbJISI0gKR4ds1oCCI_zTj4u6S6wPAWKPo3/s320/NATICO.png" alt="Palmeiras" />
+                              <span>Palmeiras</span>
+                          </div>
+                          <div class="x-center">X</div>
+                          <div class="bottom-box">
+                              <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjfpdaSKwF6AOTKYwIXRZ126LkVwKfT_EnAok6TUs_1zejKrJYc5wvcvrYZO6r-OeCHeagIZYPqB5Si35_MnCbZHiRxFi5Kqk_kadf_aM6f4SpirXOvfGVu10LD6ysRMt5guKvHQZV891HQ/s320/palmeiras-logo-3.png" alt="Náltico" />
+                              <span>Náltico</span>
+                          </div>
+                      </main>
+                      <div class="triangulo-direito"> </div>
+                      <div class="z">14°</div>
+                  </div>
+                  <button class="add-button" type="button"> VAI DAR ZEBRA </button>
+              </section>
+              <section >
+                  <div class="card" style="border: none; border-radius: 10px 10px 0px 0px;">
+                        <div class="triangulo-esquerdo"></div>
+                        <div class="f">1°</div>
+                           <span class="data" style="font-size: 12px;"> 18:00 / 20/07</span>
+                      <main class="content">
+                          <div class="top-box">
+                              <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj-ddZYijCTkaK6pcPVZa5DQAGBK19a0kBEitqTZxBZjsNfBI4Rmxb9w35krS7-vtMkn92ZJEQkMnwcFQR9M8DbMHL1k4PKFebnjBSuVyR99rbJISI0gKR4ds1oCCI_zTj4u6S6wPAWKPo3/s320/NATICO.png" alt="Palmeiras" />
+                              <span>Palmeiras</span>
+                          </div>
+                          <div class="x-center">X</div>
+                          <div class="bottom-box">
+                              <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjfpdaSKwF6AOTKYwIXRZ126LkVwKfT_EnAok6TUs_1zejKrJYc5wvcvrYZO6r-OeCHeagIZYPqB5Si35_MnCbZHiRxFi5Kqk_kadf_aM6f4SpirXOvfGVu10LD6ysRMt5guKvHQZV891HQ/s320/palmeiras-logo-3.png" alt="Náltico" />
+                              <span>Náltico</span>
+                          </div>
+                      </main>
+                        <div class="triangulo-direito"> </div>
+                        <div class="z">14°</div>
+                  </div>
+                  <button class="add-button" type="button"> VAI DAR ZEBRA </button>
+              </section>
+              <section >
+                  <div class="card" style="border: none; border-radius: 10px 10px 0px 0px;">
+                      <div class="triangulo-esquerdo"></div>
+                      <div class="f">1°</div>
+                      <span class="data" style="font-size: 12px;"> 18:00 / 20/07</span>
+                      <main class="content">
+                          <div class="top-box">
+                              <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj-ddZYijCTkaK6pcPVZa5DQAGBK19a0kBEitqTZxBZjsNfBI4Rmxb9w35krS7-vtMkn92ZJEQkMnwcFQR9M8DbMHL1k4PKFebnjBSuVyR99rbJISI0gKR4ds1oCCI_zTj4u6S6wPAWKPo3/s320/NATICO.png" alt="Palmeiras" />
+                              <span>Palmeiras</span>
+                          </div>
+                          <div class="x-center">X</div>
+                          <div class="bottom-box">
+                              <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjfpdaSKwF6AOTKYwIXRZ126LkVwKfT_EnAok6TUs_1zejKrJYc5wvcvrYZO6r-OeCHeagIZYPqB5Si35_MnCbZHiRxFi5Kqk_kadf_aM6f4SpirXOvfGVu10LD6ysRMt5guKvHQZV891HQ/s320/palmeiras-logo-3.png" alt="Náltico" />
+                              <span>Náltico</span>
+                          </div>
+                      </main>
+                      <div class="triangulo-direito"> </div>
+                      <div class="z">14°</div>
+                  </div>
+                  <button class="add-button" type="button"> VAI DAR ZEBRA </button>
+              </section>
+              <section >
+                  <div class="card" style="border: none; border-radius: 10px 10px 0px 0px;">
+                        <div class="triangulo-esquerdo"></div>
+                        <div class="f">1°</div>
+                           <span class="data" style="font-size: 12px;"> 18:00 / 20/07</span>
+                      <main class="content">
+                          <div class="top-box">
+                              <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj-ddZYijCTkaK6pcPVZa5DQAGBK19a0kBEitqTZxBZjsNfBI4Rmxb9w35krS7-vtMkn92ZJEQkMnwcFQR9M8DbMHL1k4PKFebnjBSuVyR99rbJISI0gKR4ds1oCCI_zTj4u6S6wPAWKPo3/s320/NATICO.png" alt="Palmeiras" />
+                              <span>Palmeiras</span>
+                          </div>
+                          <div class="x-center">X</div>
+                          <div class="bottom-box">
+                              <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjfpdaSKwF6AOTKYwIXRZ126LkVwKfT_EnAok6TUs_1zejKrJYc5wvcvrYZO6r-OeCHeagIZYPqB5Si35_MnCbZHiRxFi5Kqk_kadf_aM6f4SpirXOvfGVu10LD6ysRMt5guKvHQZV891HQ/s320/palmeiras-logo-3.png" alt="Náltico" />
+                              <span>Náltico</span>
+                          </div>
+                      </main>
+                        <div class="triangulo-direito"> </div>
+                        <div class="z">14°</div>
+                  </div>
+                  <button class="add-button" type="button"> VAI DAR ZEBRA </button>
+              </section>
+              <section >
+                  <div class="card" style="border: none; border-radius: 10px 10px 0px 0px;">
+                      <div class="triangulo-esquerdo"></div>
+                      <div class="f">1°</div>
+                      <span class="data" style="font-size: 12px;"> 18:00 / 20/07</span>
+                      <main class="content">
+                          <div class="top-box">
+                              <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj-ddZYijCTkaK6pcPVZa5DQAGBK19a0kBEitqTZxBZjsNfBI4Rmxb9w35krS7-vtMkn92ZJEQkMnwcFQR9M8DbMHL1k4PKFebnjBSuVyR99rbJISI0gKR4ds1oCCI_zTj4u6S6wPAWKPo3/s320/NATICO.png" alt="Palmeiras" />
+                              <span>Palmeiras</span>
+                          </div>
+                          <div class="x-center">X</div>
+                          <div class="bottom-box">
+                              <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjfpdaSKwF6AOTKYwIXRZ126LkVwKfT_EnAok6TUs_1zejKrJYc5wvcvrYZO6r-OeCHeagIZYPqB5Si35_MnCbZHiRxFi5Kqk_kadf_aM6f4SpirXOvfGVu10LD6ysRMt5guKvHQZV891HQ/s320/palmeiras-logo-3.png" alt="Náltico" />
+                              <span>Náltico</span>
+                          </div>
+                      </main>
+                      <div class="triangulo-direito"> </div>
+                      <div class="z">14°</div>
+                  </div>
+                  <button class="add-button" type="button"> VAI DAR ZEBRA </button>
+              </section>
+              <section >
+                  <div class="card" style="border: none; border-radius: 10px 10px 0px 0px;">
+                        <div class="triangulo-esquerdo"></div>
+                        <div class="f">1°</div>
+                           <span class="data" style="font-size: 12px;"> 18:00 / 20/07</span>
+                      <main class="content">
+                          <div class="top-box">
+                              <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj-ddZYijCTkaK6pcPVZa5DQAGBK19a0kBEitqTZxBZjsNfBI4Rmxb9w35krS7-vtMkn92ZJEQkMnwcFQR9M8DbMHL1k4PKFebnjBSuVyR99rbJISI0gKR4ds1oCCI_zTj4u6S6wPAWKPo3/s320/NATICO.png" alt="Palmeiras" />
+                              <span>Palmeiras</span>
+                          </div>
+                          <div class="x-center">X</div>
+                          <div class="bottom-box">
+                              <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjfpdaSKwF6AOTKYwIXRZ126LkVwKfT_EnAok6TUs_1zejKrJYc5wvcvrYZO6r-OeCHeagIZYPqB5Si35_MnCbZHiRxFi5Kqk_kadf_aM6f4SpirXOvfGVu10LD6ysRMt5guKvHQZV891HQ/s320/palmeiras-logo-3.png" alt="Náltico" />
+                              <span>Náltico</span>
+                          </div>
+                      </main>
+                        <div class="triangulo-direito"> </div>
+                        <div class="z">14°</div>
+                  </div>
+                  <button class="add-button" type="button"> VAI DAR ZEBRA </button>
+              </section>
           </div>
+
+          <!-- informacoes extras -->
+        <div class="zebras-no-futebol">
+            <div class="zebra-infor-01">
+                <!-- <img  src="https://cdn.sistemawbuy.com.br/arquivos/bd93844506579d17915975480fe409cd/blogitens/zebra-241.jpg" alt="img-zebra"> -->
+                <img  src="../images/4.png" alt="img-zebra">
+                <div>
+                    <h2>O que é uma zebra no futebol?</h2>
+                    <p style="text-align: justify;"> Uma zebra no futebol ocorre quando um time menos favorecido vence um time favorito. Esse termo é usado para descrever um resultado inesperado e surpreendente, que contraria as probabilidades e expectativas. As zebras são momentos emocionantes e inesquecíveis que mostram a imprevisibilidade e a magia do futebol.</p>
+                </div>
+            </div>
+
+            <div class="container-exemplos">
+                <h2>Confira aqui algumas das maiores zebras do futebol</h2>
+                <div class="zebra-exemplo">
+                    <img src="https://s2.glbimg.com/QGaT9dXVmwWNT-WygchDF5MrX94=/0x79:578x516/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2021/L/l/N9pAzVQCigtRAfrukt5g/117715986-3342394042484630-1660711835544052531-n.jpg" alt="Exemplo de zebra 1">
+
+                    <div>
+                        <h3>São Caetano (Anos 2000)</h3>
+                        <p>Quem viveu os anos 2000, nunca esquecerá de um time que dasafiou gigantes do futebol com nomes como Adhemar, Adãozinho, Silvio Luis, Jair Picerni (técnico). Estamos falando do São Caetano. A "ousadia" foi tamanha que o clube esteve a um passo de disputar a final do Mundial de Clubes da FIFA contra o galático Real Madrid. Já pensou? Isso porque o azulão, como ficou carinhosamente conhecido, ficou com o vice campeonato da Libertadores de 2002, frente ao Olímpia, mesmo tendo vencido o jogo de ida no Paraguai. A disputa foi para os pênaltis na partida de volta e o São Caetano perdeu o título. Foram mais dois 2º lugares que deram destque à "zebra" da época: Campeonato Brasileiro de 2000 e 2001, onde eliminou os gigantes do futebol brasileiro e sucumbiu somente nas finais. O azulão ainda foi Campeão Paulista em 2004 e disputou a final de 2007.</p>
+                    </div>
+                </div>
+                <div class="zebra-exemplo">
+                    <img src="https://www.soccerblog.com.br/wp-content/uploads/2016/05/blog-24.jpg" alt="Exemplo de zebra 2">
+                    <div>
+                        <h3>Leicester City (Campeão da Premier League em 2016)</h3>
+                        <p>Considerada uma das maiores zebras da história do futebol, o título do Leicester City na Premier League (Campeonato de Futebol da Inglaterra) no ano de 2016 é um marco inesquecível. A campanha do clube surpreendeu os admiradores da bola, que esperavam que o time lutasse contra o rebaixamento naquela oportunidade. E realmente era inimaginável que os "Foxes" conseguissem desbancar os principais e renomados clubes do futebol inglês: Manchester United, Liverpool, Chelsea, Arsenal, Manchester City e Tottenham, ainda mais tratando-se de um campeonato de pontos corridos.</p>
+                    </div>
+                </div>
+                <div class="zebra-exemplo">
+                    <img src="https://i1.wp.com/www.imortaisdofutebol.com/wp-content/uploads/2014/07/euro-2004-greece.jpg?resize=600%2C378" alt="Exemplo de zebra 3">
+                    <div>
+                        <h3>Grécia (Campeã da Euro de 2004)</h3>
+                        <p>Em 2004 foi a vez do gregos surpreenderem na Eurocopa, faturando o impensável título para uma seleção que dificilmente se classifica para a competição. A Grécia caiu num grupo extremamente difícil (Portugal, Rússia e Espanha). A partir daí, o que viesse era "lucro" e eles lucraram muito! Eliminaram França e República Tcheca no mata mata e na final reencontraram Portugal de Cristiano Ronaldo, Deco e Figo, vencendo o jogo por 1x0 e sagrando-se campeã da Euro.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Fim de informacoes extras  -->
+
+          <footer>
+            <div class="footer-content">
+              <div class="footer-section about">
+                <h3>Sobre Nós</h3>
+                <p >Somos uma plataforma de apostas esportivas dedicada a oferecer a melhor experiência para nossos usuários.</p>
+              </div>
+              <div class="footer-section links">
+                <h3>Links Rápidos</h3>
+                <ul>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">Apostas</a></li>
+                  <li><a href="#">Promoções</a></li>
+                  <li><a href="#">Contato</a></li>
+                </ul>
+              </div>
+              <div class="footer-section contact">
+                <h3>Contato</h3>
+                <p>Email: suporte@zebras .com</p>
+                <p>Telefone: (11) 1234-5678</p>
+              </div>
+            </div>
+            <div class="footer-bottom">
+              &copy; 2024 Zebras | Todos os direitos reservados.
+            </div>
+          </footer>
       </div>
 
       <!-- conteudo alternativo bilhete -->
@@ -107,11 +358,16 @@
                   </div>
               </div>
               <!-- <p><b>Retornos: </b><span>R$ 0,00</span></p> -->
+               <a href="../page-resumo-bilhete/resumo.html">
               <button>FINALIZAR ZEBRA</button>
+               </a>
           </div>
           </div>
       </div>
+
+
   </div>
+
 
   <div class="barra-inferior" id="barra-inferior">
       <div class="count">

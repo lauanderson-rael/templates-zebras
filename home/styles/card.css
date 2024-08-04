@@ -1,0 +1,155 @@
+/* CARD */
+:root {
+    --card-width: 100%;
+    --card-heigh: 130px;
+  }
+
+  section {
+    margin-left: 10px;
+    box-shadow:
+      rgba(0, 0, 0, 0.4) 0px 2px 4px,
+      rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
+      rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    margin: 0 auto;
+    width: var(--card-width);
+    background-color: transparent;
+    border-radius: 10px;
+    border: 1px solid #181869;
+  }
+  section:hover {
+    transform: scale(1.02);
+    transition: all 0.5s;
+  }
+
+  .card {
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: var(--card-heigh);
+    font-size: small;
+
+  }
+  .selected {
+    filter: brightness(0.4);
+  }
+
+  .content img {
+    width: 40px;
+  }
+
+  .x-center {
+    font-weight: bold;
+    font-size: large;
+    margin: 0 15px;
+  }
+
+  .content {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    justify-content: space-around;
+  }
+
+  .top-box,
+  .bottom-box {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    color: rgba(0, 0, 0, 0.705);
+    font-weight: 600;
+    gap: 10px;
+  }
+
+  .add-button {
+    padding: 10px 20px;
+    background: #004085;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    height: 45px;
+    width: 100%;
+    font-weight: 700;
+    font-size: small;
+    margin-top: 0;
+    border-radius: 0 0 10px 10px;
+  }
+  .add-button:hover {
+    background-color: #0051a9;
+  }
+
+  .f {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 20px;
+    color: white;
+    font-weight: 700;
+    margin: 3px 6px;
+  }
+  .z {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-size: 20px;
+    color: white;
+    font-weight: 700;
+    margin: 3px 3px;
+  }
+
+  .data {
+    opacity: 90%;
+    position: absolute;
+    top: 4px;
+    right: 6px;
+    font-weight: 700;
+    font-size: small;
+  }
+
+  @media (max-width: 768px) {
+    :root {
+      --card-width: 100%;
+    }
+
+    .content {
+      gap: 25px;
+    }
+  }
+
+  .triangulo-direito {
+    width: 0;
+    height: 0;
+    border-right: 60px solid red;
+    border-top: 60px solid transparent;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+
+  .triangulo-esquerdo {
+    width: 0;
+    height: 0;
+    border-bottom: 65px solid #004085;
+    border-right: 65px solid transparent;
+    position: absolute;
+    rotate: 90deg;
+    top: 0;
+    left: 0;
+    border-radius: 0 10px;
+  }
+
+  @media (max-width: 768px) {
+    .triangulo-direito {
+      border-right: 60px solid red;
+      border-top: 60px solid transparent;
+    }
+    .triangulo-esquerdo {
+      border-bottom: 60px solid #004085;
+      border-right: 60px solid transparent;
+    }
+  }
+
+/* FIM CARD */
