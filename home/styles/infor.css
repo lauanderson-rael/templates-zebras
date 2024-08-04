@@ -1,7 +1,8 @@
 /* CSS para a nova seção de zebras no futebol */
 .zebras-no-futebol {
     margin: 2rem 0;
-    padding: 2rem;
+    /* padding: 2rem; */
+    padding: 0.6rem;
     border-radius: 8px;
 }
 .zebra-infor-01{

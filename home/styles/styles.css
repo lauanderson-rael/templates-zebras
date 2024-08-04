@@ -245,7 +245,7 @@ body, html, * {
   padding: 12px;
   margin-top: 20px;
   font-size: 1rem;
-  background-color: green;
+  background-color: #004085 ;
   color: #fff;
   border: none;
   border-radius: 0 0 5px 5px;
@@ -257,7 +257,7 @@ body, html, * {
 }
 
 .bilhete button:hover {
-  background-color: darkgreen;
+  background-color: #035dbd ;
   transform: scaleY(1.03);
 }
 
