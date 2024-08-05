@@ -83,3 +83,16 @@ body{
       padding: 1rem;
     }
   }
+
+
+  @media (max-width: 500px) {
+    .img-logo {
+      width: 75px;
+    }
+    .cabecalho-regras {
+      margin: 0;
+      font-size: small;
+      height: 60px;
+      padding: 0rem 0.5rem;
+    }
+  }

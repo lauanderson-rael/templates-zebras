@@ -44,6 +44,22 @@ body, html, * {
     font-weight: 600;
     color: #fff;
   }
+  .acumulatty{
+    padding: 0 0.7rem;
+    display: flex;
+    color:white;
+    gap: 20px;
+    font-size: small;
+  }
+  .acumulatty span{
+    color: rgb(0, 255, 162);
+  }
+  @media (max-width: 500px){
+    .acumulatty{
+      font-size: x-small;
+    }
+
+  }
 
   .cards {
     display: grid;

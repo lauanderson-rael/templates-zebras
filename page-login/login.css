@@ -9,19 +9,15 @@ body{
   background: linear-gradient(45deg, black, #0a0a0a, #181869);
 }
 
-.main{
-  display: flex;
-  align-items: center;
-  /* margin: 1rem; */
-}
-.main img{
-  width: 69vw;
-  height: 90vh;
-}
-
 .login {
-    width: 100%;
-    height: 100vh;
+    height: 100dvh;
+  }
+
+  .main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70%;
   }
 
   .cabecalho-login {
@@ -40,23 +36,29 @@ body{
   }
 
   .container-login {
-    margin: 0 auto;
-    background-color: white;
-    width: 90%;
-    max-width: 400px;
     box-sizing: border-box;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-weight: 600;
-    border-radius: 5px;
-    position: relative;
-    padding: 2rem;
-    box-shadow: 3px 3px 8px 1px #00003f50;
+    justify-content: center;
+    background-color: transparent;
+
+  }
+  .container-login img{
+    width: 46vw;
+    border-radius: 0px 5px 5px 0px;
+  }
+  .container-login .form{
+    background: white;
+    padding: 2.5rem 1rem;
+    border-radius: 5px 0 0 5px;
   }
 
-  .container-login form {
-    width: 100%;
+  .icone-arrow{
+    margin-right: 10px;
+    color: white;
+    font-weight: 900;
+  }
+  .icone-arrow:hover{
+    color: rgba(255, 255, 255, 0.656);
   }
 
   .container-login form label {
@@ -126,12 +128,16 @@ body{
   }
 
   @media(max-width: 768px){
+    .container-login{
+      display: flex;
+      flex-direction: column-reverse;
+      margin: 0.5rem;
+    }
     .img-logo {
       width: 75px;
     }
     .main{
       display: flex;
-      flex-direction: column-reverse;
     }
     .main img{
      width: 100%;
@@ -142,5 +148,18 @@ body{
       font-size: small;
       margin-top: 15px;
     }
+    .container-login .form{
+      padding: 1rem 1rem;
+    }
+  }
 
+  @media (max-width: 500px) {
+    .img-logo {
+      width: 75px;
+    }
+    .cabecalho-login {
+      font-size: small;
+      height: 60px;
+      padding: 0rem 0.5rem;
+    }
   }

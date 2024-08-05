@@ -4,7 +4,7 @@ body {
     padding: 0;
     font-family: Arial, sans-serif;
     background: linear-gradient(45deg, black, #0a0a0a, #181869);
-    height: 100vh;
+    height: 100dvh;
   }
   .cabecalho {
     background: linear-gradient(45deg, black, #0a0a0a, #181869);
@@ -15,6 +15,14 @@ body {
     justify-content: space-between;
     align-items: center;
     height: 67px;
+  }
+  .icone-arrow{
+    margin-right: 10px;
+    color: white;
+    font-weight: 900;
+  }
+  .icone-arrow:hover{
+    color: rgba(255, 255, 255, 0.656);
   }
 
   .error {
@@ -40,13 +48,11 @@ body {
     padding: 2rem;
     border-radius: 5px;
     box-shadow: 3px 3px 8px 1px #00003f50;
-    /* width: 100%; */
     width: 400px;
-    /* max-width: 400px; */
     margin: auto; /* Centraliza o contêiner */
   }
 
-  .signup-container h1 {
+  .signup-container h2 {
     text-align: center;
     margin-bottom: 20px;
     margin-top: 0;
@@ -91,6 +97,9 @@ body {
 
   /* Responsividade */
   @media (max-width: 768px) {
+    .cabecalho{
+      height: 60px;
+    }
     .fundo{
       display: flex;
       flex-direction: column-reverse;
@@ -100,16 +109,14 @@ body {
     }
     .signup-container{
       background-color: #ffffff;
-      /* padding: 2rem; */
       border-radius: 5px;
       box-shadow: 3px 3px 8px 1px #00003f50;
-      /* width: 100%; */
-      /* max-width: 400px; */
-      /* margin: auto; */
-      border-radius: 0;
+      border-radius: 15px 15px 0 0;
       width: 100%;
       padding: 0;
-
+    }
+    .signup-container h2{
+      margin-top: 0.5rem;
     }
     .signup-form{
       padding: 10px;
@@ -120,5 +127,18 @@ body {
     }
     .img-logo {
       width: 75px;
+    }
+  }
+
+
+  @media (max-width: 500px) {
+    .img-logo {
+      width: 75px;
+    }
+    .cabecalho {
+      margin: 0;
+      font-size: small;
+      height: 60px;
+      padding: 0rem 0.5rem;
     }
   }
