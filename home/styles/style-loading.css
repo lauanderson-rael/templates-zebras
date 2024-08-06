@@ -15,6 +15,7 @@
     align-items: center;
     justify-content: center;
     text-align: center;
+    border-radius: 0px;
 }
 
 .loading img{
