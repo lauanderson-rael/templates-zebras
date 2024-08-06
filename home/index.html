@@ -9,16 +9,33 @@
     <link rel="stylesheet" href="styles/footer.css">
     <link rel="stylesheet" href="styles/card.css">
     <link rel="stylesheet" href="styles/infor.css">
+    <link rel="stylesheet" href="styles/style-loading.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <script src="scripts.js" defer></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <style>
+        #home {
+            display: none;
+        }
+    </style>
 </head>
 <body>
 
+<!-- loading -->
+<section class="main" id="loading">
+    <div class="loading">
+        <img src="../images/logo.png" alt="logo">
+        <div class="animation-bar"></div>
+    </div>
+</section>
+<!-- Fim loading -->
+
 <!-- HOME -->
+
+<div  id="home">
 <div class="container-home">
   <header class="cabecalho">
       <img class='img-logo' src="../images/logo.png" alt="logo" width="90px" />
@@ -383,5 +400,15 @@
       </div>
   </div>
 </div>
+</div>
+
+<script>
+    window.addEventListener('load', function() {
+        setTimeout(function() {
+            document.getElementById('loading').style.display = 'none';
+            document.getElementById('home').style.display = 'block';
+        }, 1500); // segundos extras
+    });
+</script>
 </body>
 </html>

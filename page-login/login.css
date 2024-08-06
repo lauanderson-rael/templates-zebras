@@ -44,12 +44,12 @@ body{
   }
   .container-login img{
     width: 46vw;
-    border-radius: 0px 5px 5px 0px;
+
   }
   .container-login .form{
     background: white;
     padding: 2.5rem 1rem;
-    border-radius: 5px 0 0 5px;
+    /* border-radius: 5px 0 0 5px; */
   }
 
   .icone-arrow{

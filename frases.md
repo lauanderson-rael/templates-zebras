@@ -14,10 +14,6 @@ botoes: #004085
 "Aqui, a zebra não só dá as caras, mas enche seu bolso!"
 "Porque dinheiro fácil só existe quando a zebra corre!"
 "Quem disse que a sorte não tem listras?"
-Essas frases podem adicionar um toque divertido e atrair visitantes para o site!
-
-Mais engraçadas
-
 
 "Zebra no campo, dinheiro no bolso!"
 "Aposte na zebra e faça a alegria do seu bolso!"
