@@ -102,6 +102,8 @@
     .zebra-exemplo{
         display: flex;
         flex-direction: column;
+        padding: 0rem; 
+        /* alterado o padding: 0.rem; */
     }
     .container-exemplos {
     gap: 20px;
